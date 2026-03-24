@@ -89,3 +89,59 @@ Se utilizaron las siguientes métricas:
 ---
 
 ## Estructura del Proyecto
+ML-Algorithms/
+│
+├── data/
+│ └── coffee_shop_revenue.csv
+│
+├── src/
+│ ├── models/
+│ ├── data_processing/
+│ ├── evaluation/
+│ └── utils/
+│
+├── results/
+│ ├── svm/
+│ ├── randomforest/
+│ ├── neuralnetwork/
+│ ├── logisticregression/
+│ └── decisiontree/
+│
+├── ml_analysis.py
+├── requirements.txt
+└── README.md
+## Requisitos
+
+- Python 3.11+
+
+### Dependencias
+
+
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+scipy
+joblib
+## Ejecución
+
+Clonar el repositorio:
+
+
+git clone https://github.com/RyuWilliam/taller-2.git
+
+
+Instalar dependencias:
+
+
+pip install -r requirements.txt
+
+
+Ejecutar el proyecto:
+
+
+python ml_analysis.py
+
+
+---
