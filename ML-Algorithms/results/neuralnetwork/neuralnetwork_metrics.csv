@@ -1,0 +1,2 @@
+model_name,model_type,evaluation_date,train_accuracy,test_accuracy,precision,recall,f1_score,overfitting_score,cohen_kappa,matthews_corrcoef
+NeuralNetwork_Coffee_Shop_Classifier,NeuralNetworkClassifier,2025-09-20T16:37:20.521395,0.933125,0.9375,0.9384749865519096,0.9375,0.9376944582224828,-0.004375000000000018,0.871207047550358,0.871774089890206

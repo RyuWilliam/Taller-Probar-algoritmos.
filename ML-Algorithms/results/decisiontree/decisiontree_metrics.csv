@@ -1,0 +1,2 @@
+model_name,model_type,evaluation_date,train_accuracy,test_accuracy,precision,recall,f1_score,overfitting_score,cohen_kappa,matthews_corrcoef
+DecisionTree_Coffee_Shop_Classifier,DecisionTreeClassifierCustom,2025-09-20T16:37:05.719946,0.96625,0.885,0.8865242966751918,0.885,0.8854026361857688,0.08125000000000004,0.7632527020072054,0.7639004787271806

@@ -1,0 +1,233 @@
+{
+  "model_info": {
+    "name": "DecisionTree_Coffee_Shop_Classifier",
+    "type": "DecisionTreeClassifierCustom",
+    "parameters": {
+      "ccp_alpha": 0.0,
+      "class_weight": "balanced",
+      "criterion": "entropy",
+      "max_depth": 10,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "evaluation_date": "2025-09-20T16:37:05.719946"
+  },
+  "data_info": {
+    "train_samples": 1600,
+    "test_samples": 400,
+    "num_features": 6,
+    "num_classes": 2,
+    "class_names": [
+      "No Exitosa",
+      "Exitosa"
+    ],
+    "feature_names": [
+      "Number_of_Customers_Per_Day",
+      "Average_Order_Value",
+      "Operating_Hours_Per_Day",
+      "Number_of_Employees",
+      "Marketing_Spend_Per_Day",
+      "Location_Foot_Traffic"
+    ]
+  },
+  "performance_metrics": {
+    "train_metrics": {
+      "accuracy": 0.96625,
+      "balanced_accuracy": 0.9659817984150979,
+      "precision": 0.966363969632847,
+      "recall": 0.96625,
+      "f1_score": 0.9662820913467369
+    },
+    "test_metrics": {
+      "accuracy": 0.885,
+      "balanced_accuracy": 0.8846353356157277,
+      "precision": 0.8865242966751918,
+      "recall": 0.885,
+      "f1_score": 0.8854026361857688,
+      "auc_roc": 0.8897058823529411,
+      "average_precision": 0.7949446164048389
+    },
+    "advanced_metrics": {
+      "cohen_kappa": 0.7632527020072054,
+      "matthews_corrcoef": 0.7639004787271806
+    },
+    "overfitting_score": 0.08125000000000004
+  },
+  "detailed_analysis": {
+    "per_class_metrics": [
+      {
+        "Class": "No Exitosa",
+        "Precision": 0.9173913043478261,
+        "Recall": 0.8865546218487395,
+        "F1-Score": 0.9017094017094017,
+        "Support": 238
+      },
+      {
+        "Class": "Exitosa",
+        "Precision": 0.8411764705882353,
+        "Recall": 0.8827160493827161,
+        "F1-Score": 0.8614457831325302,
+        "Support": 162
+      }
+    ],
+    "confusion_matrix_analysis": {
+      "confusion_matrix": [
+        [
+          211,
+          27
+        ],
+        [
+          19,
+          143
+        ]
+      ],
+      "confusion_matrix_normalized_by_true": [
+        [
+          0.8865546218487395,
+          0.1134453781512605
+        ],
+        [
+          0.11728395061728394,
+          0.8827160493827161
+        ]
+      ],
+      "confusion_matrix_normalized_by_pred": [
+        [
+          0.9173913043478261,
+          0.1588235294117647
+        ],
+        [
+          0.08260869565217391,
+          0.8411764705882353
+        ]
+      ],
+      "confusion_matrix_normalized_overall": [
+        [
+          0.5275,
+          0.0675
+        ],
+        [
+          0.0475,
+          0.3575
+        ]
+      ],
+      "total_samples": 400,
+      "correct_predictions": 354,
+      "incorrect_predictions": 46,
+      "error_rate": 0.115,
+      "class_distribution": [
+        238,
+        162
+      ],
+      "prediction_distribution": [
+        230,
+        170
+      ]
+    },
+    "error_analysis": {
+      "per_class_errors": {
+        "No Exitosa": {
+          "true_instances": 238,
+          "correct_predictions": 211,
+          "false_negatives": 27,
+          "false_positives": 19,
+          "accuracy_for_class": 0.8865546218487395
+        },
+        "Exitosa": {
+          "true_instances": 162,
+          "correct_predictions": 143,
+          "false_negatives": 19,
+          "false_positives": 27,
+          "accuracy_for_class": 0.8827160493827161
+        }
+      },
+      "most_common_confusions": [
+        {
+          "true_class": "No Exitosa",
+          "predicted_class": "Exitosa",
+          "count": 27,
+          "percentage": 11.344537815126051
+        },
+        {
+          "true_class": "Exitosa",
+          "predicted_class": "No Exitosa",
+          "count": 19,
+          "percentage": 11.728395061728394
+        }
+      ],
+      "total_errors": 46,
+      "error_rate": 0.115
+    },
+    "cross_validation": {
+      "accuracy": {
+        "mean": 0.8568749999999999,
+        "std": 0.017275343701356565,
+        "min": 0.83125,
+        "max": 0.884375,
+        "scores": [
+          0.85625,
+          0.85,
+          0.884375,
+          0.83125,
+          0.8625
+        ]
+      },
+      "precision_weighted": {
+        "mean": 0.8595648337981718,
+        "std": 0.016231240892088338,
+        "min": 0.8334774094002215,
+        "max": 0.8845997126195672,
+        "scores": [
+          0.8583836027576369,
+          0.8589386143352877,
+          0.8845997126195672,
+          0.8334774094002215,
+          0.8624248298781453
+        ]
+      },
+      "recall_weighted": {
+        "mean": 0.8568749999999999,
+        "std": 0.017275343701356565,
+        "min": 0.83125,
+        "max": 0.884375,
+        "scores": [
+          0.85625,
+          0.85,
+          0.884375,
+          0.83125,
+          0.8625
+        ]
+      },
+      "f1_weighted": {
+        "mean": 0.8574362447155487,
+        "std": 0.016988032580934686,
+        "min": 0.8318412565695175,
+        "max": 0.8844782637247176,
+        "scores": [
+          0.8567775018946193,
+          0.8517578125,
+          0.8844782637247176,
+          0.8318412565695175,
+          0.8623263888888889
+        ]
+      }
+    }
+  },
+  "feature_analysis": {
+    "feature_importance": {
+      "Number_of_Customers_Per_Day": 0.5092436974789915,
+      "Average_Order_Value": 0.39159663865546207,
+      "Operating_Hours_Per_Day": 0.0,
+      "Number_of_Employees": 0.00784313725490204,
+      "Marketing_Spend_Per_Day": 0.07058823529411765,
+      "Location_Foot_Traffic": 0.020728291316526634
+    }
+  }
+}
